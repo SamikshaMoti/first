@@ -1,7 +1,9 @@
+echo "Welcome TO The GUESSING GAME"
 a=$(ls | wc -l)
 function ANS {
 echo "Guessed Correctly"
-echo "$a"
+echo "Congrats You Have WON"
+echo "ANS - $a"
 }
 let f1=0 
 while [[ $f1 -eq 0 ]]
@@ -28,4 +30,4 @@ do
          fi
       done   
 done
-
+echo "GAME OVER"
